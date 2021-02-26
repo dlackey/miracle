@@ -5,9 +5,9 @@ import {
   CardContent,
   CardMedia,
   Container,
-  Fab,
   Typography,
  } from '@material-ui/core';
+ import Timer from './Timer';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -15,11 +15,6 @@ const useStyles = makeStyles(theme => ({
   },
   container: {
     paddingBottom: theme.spacing(2),
-  },
-  fab: {
-    position: 'fixed',
-    right: theme.spacing(3),
-    bottom: theme.spacing(3),
   },
 }));
 
@@ -50,7 +45,7 @@ function App() {
           Jumping Jacks
         </Saver>
       </Container>
-      <Fab color="primary" className={classes.fab}><Typography>60</Typography></Fab>
+      <Timer />
     </React.Fragment>
   );
 }
