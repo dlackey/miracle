@@ -23,7 +23,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <Container maxWidth='sm' className={classes.container}>
+      <Container maxWidth='xs' className={classes.container}>
         <Saver header='Silence'>
           You sit, very calm, very peaceful, and you breathe deeply, slowly. As you sit in silence, you’re totally present in the now, in the moment. You calm your mind, relax your body, and allow all of your stress to melt away. You develop a deeper sense of peace, purpose, and direction.
         </Saver>
@@ -39,10 +39,10 @@ function App() {
           10 Pages, Picture
         </Saver>
         <Saver header='Scribing'>
-          What’s the ONE Thing I can do today such that by doing it everything else will be easier or unnecessary? You take a minute to write down what you’re grateful for, what you’re proud of, and the results you’re committed to creating for that day. Doing so, you put yourself in an empowered, an inspired, and confident state of mind.
+          What’s the ONE Thing I can do today such that by doing it everything else will be easier or unnecessary? Love, Health, Wealth.
         </Saver>
         <Saver header='Exercise'>
-          Jumping Jacks
+          Finally, you stand up and you spend the last minute, doing jumping jacks for 60 seconds and getting your heart rate up and getting energized and waking yourself up and increasing your ability to be alert and to focus.
         </Saver>
       </Container>
       <Timer />
@@ -56,10 +56,10 @@ function Saver({ header, children }) {
   return (
     <Card className={classes.card}>
       <CardContent>
-        <Typography variant="h5">
+        <Typography variant="h6">
           {header}
         </Typography>
-        <Typography color="textSecondary">
+        <Typography color="textSecondary" variant="body1">
           {children}
         </Typography>
       </CardContent>
