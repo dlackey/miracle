@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import {
   Card,
   CardContent,
-  CardMedia,
+  //CardMedia,
   Container,
   Typography,
  } from '@material-ui/core';
@@ -16,6 +16,10 @@ const useStyles = makeStyles(theme => ({
   container: {
     paddingBottom: theme.spacing(2),
   },
+  logo: {
+    width: '100%',
+    marginTop: theme.spacing(1),
+  }
 }));
 
 function App() {
@@ -24,6 +28,7 @@ function App() {
   return (
     <React.Fragment>
       <Container maxWidth='xs' className={classes.container}>
+        <img src='miracle.png' className={classes.logo} alt='Logo' />
         <Saver header='Silence'>
           You sit, very calm, very peaceful, and you breathe deeply, slowly. As you sit in silence, you’re totally present in the now, in the moment. You calm your mind, relax your body, and allow all of your stress to melt away. You develop a deeper sense of peace, purpose, and direction.
         </Saver>
