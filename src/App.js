@@ -30,12 +30,14 @@ function App() {
       <Container maxWidth='xs' className={classes.container}>
         <img src='miracle.png' className={classes.logo} alt='Logo' />
         <Saver header='Silence'>
-          You sit, very calm, very peaceful, and you breathe deeply, slowly. As you sit in silence, you’re totally present in the now, in the moment. You calm your mind, relax your body, and allow all of your stress to melt away. You develop a deeper sense of peace, purpose, and direction.
+          As you sit in silence, you’re totally present in the moment. You calm your mind, relax your body, and allow all of your stress to melt away.
         </Saver>
         <Saver header='Affirmations'>
-          You pull out your daily Affirmations—the ones that remind you of your unlimited potential and your most important priorities—and you read them out loud from top to bottom.
-          * Lease Falconhead
-          * Buy NNN
+          <ul>
+            <li>I will eat a whole, plant-based diet.</li>
+            <li>I will have one date each week.</li>
+            <li>I will complete this quarter's Rocks.</li>
+          </ul>
         </Saver>
         <Saver header='Visualization'>
           You visualize the day going perfectly, see yourself enjoying your work, smiling and laughing with your family, or your significant other, and easily accomplishing all that you intend to accomplish for that day.
