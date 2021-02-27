@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Fab, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import Icon from '@material-ui/icons/Timer';
 
 const useStyles = makeStyles(theme => ({
   fab: {
@@ -11,7 +12,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function Timer() {
-  const [time, setTime] = useState(60);
+  const [time, setTime] = useState(0);
   const [start, setStart] = useState(false);
   
   useEffect(() => {
@@ -29,9 +30,11 @@ function Timer() {
 
   const classes = useStyles();
 
+  const content = (time === 0) ? <Icon /> : <Typography>{time}</Typography>;
+
   return (
     <Fab color='primary' className={classes.fab} onClick={handleClick}>
-      <Typography>{time}</Typography>
+      {content}
     </Fab>
   );
 }
