@@ -26,7 +26,7 @@ const affirmations = (
   <React.Fragment>
     I commit to a whole, plant-based diet.<br />
     I commit to one date each week.<br />
-    I commit to this quarters Rocks.
+    I commit to this quarter's Rocks.
   </React.Fragment>
 );
 
@@ -50,7 +50,7 @@ function App() {
           title='Visualization'
           text='You visualize the day going perfectly, see yourself enjoying your work, smiling and laughing with your family, or your significant other, and easily accomplishing all that you intend to accomplish for that day.'
         >
-          <CardMedia image="book.png" component="img" height="100" />
+          <CardMedia image="health.webp" component="img" height="100%" />
         </Saver>
         <Saver
           title='Reading'
