@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import {
   Card,
   CardContent,
-  //CardMedia,
+  CardMedia,
   Container,
   Typography,
  } from '@material-ui/core';
@@ -22,55 +22,67 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
+const affirmations = (
+  <React.Fragment>
+    I commit to a whole, plant-based diet.<br />
+    I commit to one date each week.<br />
+    I commit to this quarters Rocks.
+  </React.Fragment>
+);
+
 function App() {
   const classes = useStyles();
 
   return (
     <React.Fragment>
+      <Timer />
       <Container maxWidth='xs' className={classes.container}>
         <img src='miracle.png' className={classes.logo} alt='Logo' />
-        <Saver header='Silence'>
-          As you sit in silence, you’re totally present in the moment. You calm your mind, relax your body, and allow all of your stress to melt away.
+        <Saver
+          title='Silence'
+          text='As you sit in silence, you’re totally present in the moment. You calm your mind, relax your body, and allow all of your stress to melt away.'
+        />
+        <Saver
+          title='Affirmations'
+          text={affirmations}
+        />
+        <Saver
+          title='Visualization'
+          text='You visualize the day going perfectly, see yourself enjoying your work, smiling and laughing with your family, or your significant other, and easily accomplishing all that you intend to accomplish for that day.'
+        >
+          <CardMedia image="book.png" component="img" height="100" />
         </Saver>
-        <Saver header='Affirmations'>
-          <ul>
-            <li>I will eat a whole, plant-based diet.</li>
-            <li>I will have one date each week.</li>
-            <li>I will complete this quarter's Rocks.</li>
-          </ul>
-        </Saver>
-        <Saver header='Visualization'>
-          You visualize the day going perfectly, see yourself enjoying your work, smiling and laughing with your family, or your significant other, and easily accomplishing all that you intend to accomplish for that day.
-        </Saver>
-        <Saver header='Reading'>
-          10 Pages, Picture
-        </Saver>
-        <Saver header='Scribing'>
-          What’s the ONE Thing I can do today such that by doing it everything else will be easier or unnecessary? Love, Health, Wealth.
-        </Saver>
-        <Saver header='Exercise'>
-          Finally, you stand up and you spend the last minute, doing jumping jacks for 60 seconds and getting your heart rate up and getting energized and waking yourself up and increasing your ability to be alert and to focus.
-        </Saver>
+        <Saver
+          title='Reading'
+          text='10 Pages, Picture'
+        />
+        <Saver
+          title='Scribing'
+          text='What’s the ONE Thing I can do today such that by doing it everything else will be easier or unnecessary?'
+        />
+        <Saver
+          title='Exercise'
+          text='Finally, you stand up and you spend the last minute, doing jumping jacks for 60 seconds and getting your heart rate up and getting energized and waking yourself up and increasing your ability to be alert and to focus.'
+        />
       </Container>
-      <Timer />
     </React.Fragment>
   );
 }
 
-function Saver({ header, children }) {
+function Saver({ title, text, children }) {
   const classes = useStyles();
 
   return (
     <Card className={classes.card}>
       <CardContent>
         <Typography variant="h6">
-          {header}
+          {title}
         </Typography>
         <Typography color="textSecondary" variant="body1">
-          {children}
+          {text}
         </Typography>
       </CardContent>
-      {/* <CardMedia image="book.png" component="img" height="100" /> */}
+      {children}
     </Card>
   );
 }
