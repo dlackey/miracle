@@ -5,6 +5,7 @@ import {
   CardContent,
   CardMedia,
   Container,
+  TextField,
   Typography,
  } from '@material-ui/core';
  import Timer from './Timer';
@@ -19,6 +20,9 @@ const useStyles = makeStyles(theme => ({
   logo: {
     width: '100%',
     marginTop: theme.spacing(2),
+  },
+  text: {
+    width: '100%',
   }
 }));
 
@@ -40,7 +44,7 @@ function App() {
         <img src='miracle.png' className={classes.logo} alt='Logo' />
         <Saver
           title='Silence'
-          text='As you sit in silence, you’re totally present in the moment. You calm your mind, relax your body, and allow all of your stress to melt away.'
+          text="As I sit in silence, I'm totally present in the moment. I calm my mind, relax my body, and allow all of my stress to melt away."
         />
         <Saver
           title='Affirmations'
@@ -48,21 +52,29 @@ function App() {
         />
         <Saver
           title='Visualization'
-          text='You visualize the day going perfectly, see yourself enjoying your work, smiling and laughing with your family, or your significant other, and easily accomplishing all that you intend to accomplish for that day.'
+          text='I visualize Falconhead getting leased.'
         >
-          <CardMedia image="health.webp" component="img" height="100%" />
+          <CardMedia image="wealth.webp" component="img" />
         </Saver>
         <Saver
           title='Reading'
-          text='10 Pages, Picture'
-        />
+          text='I read 10 pages of How Not To Die.' // Italics
+        >
+          <CardMedia image="book.png" component="img" />
+        </Saver>
         <Saver
           title='Scribing'
           text='What’s the ONE Thing I can do today such that by doing it everything else will be easier or unnecessary?'
-        />
+        >
+          <CardContent>
+            <TextField className={classes.text}
+              multiline
+            />
+          </CardContent>
+        </Saver>
         <Saver
           title='Exercise'
-          text='Finally, you stand up and you spend the last minute, doing jumping jacks for 60 seconds and getting your heart rate up and getting energized and waking yourself up and increasing your ability to be alert and to focus.'
+          text='I do jumping jacks for 60 seconds.'
         />
       </Container>
     </React.Fragment>
