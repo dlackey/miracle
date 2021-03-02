@@ -8,7 +8,9 @@ import {
   TextField,
   Typography,
  } from '@material-ui/core';
- import Timer from './Timer';
+ import Timer from './components/Timer';
+ import img1 from './images/miracle.png';
+ import img2 from './images/visualization.png';
  
 const useStyles = makeStyles(theme => ({
   card: {
@@ -41,7 +43,7 @@ function App() {
     <React.Fragment>
       <Timer />
       <Container maxWidth='xs' className={classes.container}>
-        <img src='miracle.png' className={classes.logo} alt='Logo' />
+        <img src={img1} className={classes.logo} alt='Logo' />
         <Saver
           title='Silence'
           text="As I sit in silence, I'm present in the moment. I calm my mind, relax my body, and allow all of my stress to melt away."
@@ -54,7 +56,7 @@ function App() {
           title='Visualization'
           text='I visualize Falconhead getting leased.'
         >
-          <CardMedia image="wealth.webp" component="img" />
+          <CardMedia image={img2} component="img" />
         </Saver>
         <Saver
           title='Reading'
