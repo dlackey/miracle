@@ -1,7 +1,6 @@
 {
   "name": "miracle",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://dlackey.github.io/miracle/",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
