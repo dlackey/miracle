@@ -27,7 +27,7 @@ function Timer() {
   }
 
   const classes = useStyles();
-  const content = (time === 0) ? <Icon /> : <Typography>{time}</Typography>;
+  const content = (time <= 0) ? <Icon /> : <Typography>{time}</Typography>;
 
   return (
     <Fab color="primary" className={classes.fab} onClick={handleClick}>
