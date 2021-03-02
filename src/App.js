@@ -9,7 +9,7 @@ import {
   Typography,
  } from '@material-ui/core';
  import Timer from './Timer';
-
+ 
 const useStyles = makeStyles(theme => ({
   card: {
     marginTop: theme.spacing(2),
@@ -44,7 +44,7 @@ function App() {
         <img src='miracle.png' className={classes.logo} alt='Logo' />
         <Saver
           title='Silence'
-          text="As I sit in silence, I'm totally present in the moment. I calm my mind, relax my body, and allow all of my stress to melt away."
+          text="As I sit in silence, I'm present in the moment. I calm my mind, relax my body, and allow all of my stress to melt away."
         />
         <Saver
           title='Affirmations'
@@ -60,7 +60,7 @@ function App() {
           title='Reading'
           text='I read 10 pages of How Not To Die.' // Italics
         >
-          <CardMedia image="book.png" component="img" />
+          {/*<CardMedia image="book.png" component="img" />*/}
         </Saver>
         <Saver
           title='Scribing'
