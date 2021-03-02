@@ -14,8 +14,8 @@ function Scribing() {
 
   return (
     <Saver
-      title='Scribing'
-      text='What’s the ONE Thing I can do today such that by doing it everything else will be easier or unnecessary?'
+      title="Scribing"
+      text="What’s the ONE Thing I can do today such that by doing it everything else will be easier or unnecessary?"
     >
       <CardContent>
         <TextField className={classes.input} multiline />

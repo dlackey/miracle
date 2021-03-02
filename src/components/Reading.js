@@ -9,7 +9,7 @@ const text = (
 
 function Reading() {
   return (
-    <Saver title='Reading' text={text} />
+    <Saver title="Reading" text={text} />
   );
 }
 

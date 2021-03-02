@@ -11,7 +11,7 @@ const text = (
 
 function Affirmations() {
   return (
-    <Saver title='Affirmations' text={text} />
+    <Saver title="Affirmations" text={text} />
   );
 }
 

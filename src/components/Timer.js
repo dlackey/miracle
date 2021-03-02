@@ -33,7 +33,7 @@ function Timer() {
   const content = (time === 0) ? <Icon /> : <Typography>{time}</Typography>;
 
   return (
-    <Fab color='primary' className={classes.fab} onClick={handleClick}>
+    <Fab color="primary" className={classes.fab} onClick={handleClick}>
       {content}
     </Fab>
   );

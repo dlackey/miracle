@@ -6,8 +6,8 @@ import image from '../images/visualization.png';
 function Visualization() {
   return (
     <Saver
-      title='Visualization'
-      text='I visualize Falconhead getting leased.'
+      title="Visualization"
+      text="I visualize Falconhead getting leased."
     >
       <CardMedia image={image} component="img" />
     </Saver>
