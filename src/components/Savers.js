@@ -56,7 +56,7 @@ function Exercise() {
 function Reading() {
   const text = (
     <React.Fragment>
-      I read 10 pages of <i>How Not To Die</i>.
+      I read 10 pages of <i>Sold</i>.
     </React.Fragment>
   );
 
