@@ -14,11 +14,13 @@ function Silence() {
 
 function Affirmations() {
   const text = (
-    <React.Fragment>
-      I commit to a whole, plant-based diet.<br />
-      I commit to one date each week.<br />
-      I commit to this quarter's Rocks.
-    </React.Fragment>
+    <ul>
+      <li>I commit to the Daily Dozen.</li>
+      <li>I commit to improving my sleep.</li>
+      <li>I commit to following 5/3/1.</li>
+      <li>I commit to one date each week.</li>
+      <li>I commit to this quarter's Rocks.</li>
+    </ul>
   );
 
   return (
