@@ -1,14 +1,7 @@
 import React from 'react';
-import { CardContent, CardMedia, TextField } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Button, CardActions, CardMedia } from '@material-ui/core';
 import Saver from './Saver';
 import visualization from '../images/visualization.png';
-
-const useStyles = makeStyles(theme => ({
-  textField: {
-    width: '100%',
-  }
-}));
 
 function Silence() {
   return (
@@ -66,16 +59,14 @@ function Reading() {
 }
 
 function Scribing() {
-  const classes = useStyles();
-
   return (
     <Saver
       title="Scribing"
       text="What’s the ONE Thing I can do today such that by doing it everything else will be easier or unnecessary?"
     >
-      <CardContent>
-        <TextField className={classes.textField} multiline />
-      </CardContent>
+      <CardActions>
+        <Button color="primary" href="https://forms.gle/MSg1Jvvq4PdkbkXM9" target="_blank">Open Journal</Button>
+      </CardActions>
     </Saver>
   );
 }
