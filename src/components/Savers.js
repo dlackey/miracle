@@ -19,11 +19,9 @@ function Silence() {
 function Affirmations() {
   const text = (
     <ul>
-      <li>I commit to the Daily Dozen.</li>
       <li>I commit to improving my sleep.</li>
-      <li>I commit to following 5/3/1.</li>
       <li>I commit to one date each week.</li>
-      <li>I commit to learning Chinese.</li>
+      <li>I commit to house hacking.</li>
       <li>I commit to this quarter's Rocks.</li>
     </ul>
   );
