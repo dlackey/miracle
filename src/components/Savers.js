@@ -63,6 +63,15 @@ function Reading() {
   );
 }
 
+function Chinese() {
+  return (
+    <Saver
+      title="Chinese"
+      text="I do a Duolingo Chinese lesson."
+    />
+  );
+}
+
 function Scribing() {
   return (
     <Saver
@@ -82,5 +91,6 @@ export {
   Visualization,
   Exercise,
   Reading,
+  Chinese,
   Scribing,
 };
