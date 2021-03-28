@@ -8,7 +8,11 @@ function Silence() {
     <Saver
       title="Silence"
       text="As I sit in silence, I'm present in the moment. I calm my mind, relax my body, and allow all of my stress to melt away."
-    />
+    >
+      <CardActions>
+        <Button color="primary" href="https://apps.apple.com/us/app/calm/id571800810" target="_blank">Open Calm</Button>
+      </CardActions>
+    </Saver>
   );
 }
 
