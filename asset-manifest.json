@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/miracle/static/js/main.d4dda333.chunk.js",
-    "main.js.map": "/miracle/static/js/main.d4dda333.chunk.js.map",
+    "main.js": "/miracle/static/js/main.bbc9ff6b.chunk.js",
+    "main.js.map": "/miracle/static/js/main.bbc9ff6b.chunk.js.map",
     "runtime-main.js": "/miracle/static/js/runtime-main.03621808.js",
     "runtime-main.js.map": "/miracle/static/js/runtime-main.03621808.js.map",
     "static/css/2.62902458.chunk.css": "/miracle/static/css/2.62902458.chunk.css",
@@ -11,13 +11,13 @@
     "static/css/2.62902458.chunk.css.map": "/miracle/static/css/2.62902458.chunk.css.map",
     "static/js/2.17cc4066.chunk.js.LICENSE.txt": "/miracle/static/js/2.17cc4066.chunk.js.LICENSE.txt",
     "static/media/miracle.68a21630.png": "/miracle/static/media/miracle.68a21630.png",
-    "static/media/index.css": "/miracle/static/media/roboto-vietnamese-400-normal.52cebac0.woff2",
-    "static/media/visualization.ec90330a.png": "/miracle/static/media/visualization.ec90330a.png"
+    "static/media/nnn.e6a00e13.png": "/miracle/static/media/nnn.e6a00e13.png",
+    "static/media/index.css": "/miracle/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.03621808.js",
     "static/css/2.62902458.chunk.css",
     "static/js/2.17cc4066.chunk.js",
-    "static/js/main.d4dda333.chunk.js"
+    "static/js/main.bbc9ff6b.chunk.js"
   ]
 }
