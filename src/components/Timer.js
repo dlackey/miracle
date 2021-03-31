@@ -4,6 +4,10 @@ import { Fab, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Icon from '@material-ui/icons/Timer';
 
+const INTERVAL = 60000;
+
+const beep = Beep({ frequency: 830, interval: INTERVAL });
+
 const useStyles = makeStyles(theme => ({
   fab: {
     position: 'fixed',
@@ -17,18 +21,15 @@ function Timer() {
   
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime(Math.max(time - 1, 0))
-
-      // Play beep
-      if (time === 1)
-        Beep({ frequency: 830 })(1);
+      setTime(Math.max(time - 1, 0));
     }, 1000);
 
     return () => clearInterval(interval);
   }, [time]);
 
   function handleClick() {
-    setTime(5);
+    beep(2);
+    setTime(INTERVAL / 1000);
   }
 
   const classes = useStyles();
