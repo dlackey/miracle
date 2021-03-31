@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, CardActions, CardMedia } from '@material-ui/core';
 import Saver from './Saver';
-import visualization from '../images/visualization.png';
+import visualization from '../images/nnn.png';
 
 function Silence() {
   return (
@@ -35,7 +35,7 @@ function Visualization() {
   return (
     <Saver
       title="Visualization"
-      text="I visualize Falconhead getting leased."
+      text="I visualize buying a NNN."
     >
       <CardMedia image={visualization} component="img" />
     </Saver>
