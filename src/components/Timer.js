@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Beep from 'browser-beep';
 import { Fab, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Icon from '@material-ui/icons/Timer';
@@ -17,13 +18,17 @@ function Timer() {
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(Math.max(time - 1, 0))
+
+      // Play beep
+      if (time === 1)
+        Beep({ frequency: 830 })(1);
     }, 1000);
 
     return () => clearInterval(interval);
   }, [time]);
 
   function handleClick() {
-    setTime(60);
+    setTime(5);
   }
 
   const classes = useStyles();
