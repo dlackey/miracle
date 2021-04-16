@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, CardActions, CardMedia } from '@material-ui/core';
 import Saver from './Saver';
-import visualization from '../images/nnn.png';
+import visualization from '../images/city.png';
 
 function Silence() {
   return (
