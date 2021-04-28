@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, CardActions, CardMedia } from '@material-ui/core';
-import Saver from './Saver';
+import { CardMedia } from '@material-ui/core';
+import { Saver, SaverAction } from './Saver';
 import visualization from '../images/city.png';
 
 function Silence() {
@@ -9,9 +9,7 @@ function Silence() {
       title="Silence"
       text="As I sit in silence, I'm present in the moment. I calm my mind, relax my body, and allow all of my stress to melt away."
     >
-      <CardActions>
-        <Button color="primary" href="https://calmcom.app.link/" target="_blank">Open Calm</Button>
-      </CardActions>
+      <SaverAction text="Open Calm" href="https://calmcom.app.link/" />
     </Saver>
   );
 }
@@ -59,7 +57,9 @@ function Reading() {
   );
 
   return (
-    <Saver title="Reading" text={text} />
+    <Saver title="Reading" text={text}>
+      <SaverAction text="Open Book" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=1385734566" />
+    </Saver>
   );
 }
 
@@ -78,9 +78,7 @@ function Scribing() {
       title="Scribing"
       text="What’s the ONE Thing I can do today such that by doing it everything else will be easier or unnecessary?"
     >
-      <CardActions>
-        <Button color="primary" href="https://forms.gle/MSg1Jvvq4PdkbkXM9" target="_blank">Open Journal</Button>
-      </CardActions>
+      <SaverAction text="Open Journal" href="https://forms.gle/MSg1Jvvq4PdkbkXM9" />
     </Saver>
   );
 }

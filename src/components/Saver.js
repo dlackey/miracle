@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography } from '@material-ui/core';
+import { Button, Card, CardActions, CardContent, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
@@ -25,4 +25,12 @@ function Saver({ title, text, children }) {
   );
 }
 
-export default Saver;
+function SaverAction({ text, href }) {
+  return (
+    <CardActions>
+      <Button color="primary" href={href} target="_blank">{text}</Button>
+    </CardActions>
+  );
+}
+
+export { Saver, SaverAction };
