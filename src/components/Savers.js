@@ -69,7 +69,7 @@ function Chinese() {
       title="Chinese"
       text="I do a Duolingo Chinese lesson."
     >
-      <SaverAction text="Open Duolingo" href="https://itunes.apple.com/app/duolingo-learn-spanish-french/id570060128?mt=8" />
+      <SaverAction text="Open Duolingo" href="https://apps.apple.com/us/app/id570060128" />
     </Saver>
   );
 }
