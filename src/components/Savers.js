@@ -52,13 +52,13 @@ function Exercise() {
 function Reading() {
   const text = (
     <React.Fragment>
-      I read 10 pages of <i>Leadership and Self-Deception</i>.
+      I read 10 pages of <i>The Simple Path to Wealth</i>.
     </React.Fragment>
   );
 
   return (
     <Saver title="Reading" text={text}>
-      <SaverAction text="Open Book" href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=1385734566" />
+      <SaverAction text="Open Book" href="https://apps.apple.com/us/app/id302584613" />
     </Saver>
   );
 }
