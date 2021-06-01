@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardMedia } from '@material-ui/core';
 import { Saver, SaverAction } from './Saver';
-import visualization from '../images/city.png';
+import visualization from '../images/lease.png';
 
 function Silence() {
   return (
@@ -33,7 +33,7 @@ function Visualization() {
   return (
     <Saver
       title="Visualization"
-      text="I visualize buying a NNN."
+      text="I visualize Falconhead getting leased."
     >
       <CardMedia image={visualization} component="img" />
     </Saver>
@@ -52,7 +52,7 @@ function Exercise() {
 function Reading() {
   const text = (
     <React.Fragment>
-      I read 10 pages of <i>The Simple Path to Wealth</i>.
+      I read 3% of <i>The 4-Hour Workweek</i>.
     </React.Fragment>
   );
 
