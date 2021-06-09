@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import logo from './images/miracle.png';
-import { Silence, Affirmations, Visualization, Exercise, Reading, Chinese, Scribing } from './components/Savers';
+import { Silence, Visualization, Exercise, Reading, Chinese, Scribing } from './components/Savers';
 import Timer from './components/Timer';
 
 const useStyles = makeStyles(theme => ({
@@ -24,9 +24,8 @@ function App() {
       <Container maxWidth="xs" className={classes.container}>
         <img src={logo} className={classes.logo} alt="Logo" />
         <Silence />
-        <Affirmations />
-        <Visualization />
         <Scribing />
+        <Visualization />
         <Chinese />
         <Reading />
         <Exercise />

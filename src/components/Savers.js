@@ -14,21 +14,6 @@ function Silence() {
   );
 }
 
-function Affirmations() {
-  const text = (
-    <ul>
-      <li>I commit to improving my sleep.</li>
-      <li>I commit to one date each week.</li>
-      <li>I commit to house hacking.</li>
-      <li>I commit to this quarter's Rocks.</li>
-    </ul>
-  );
-
-  return (
-    <Saver title="Affirmations" text={text} />
-  );
-}
-
 function Visualization() {
   return (
     <Saver
@@ -87,7 +72,6 @@ function Scribing() {
 
 export {
   Silence,
-  Affirmations,
   Visualization,
   Exercise,
   Reading,
