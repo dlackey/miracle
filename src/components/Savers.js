@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardMedia } from '@material-ui/core';
 import { Saver, SaverAction } from './Saver';
-import visualization from '../images/lease.png';
+import visualization from '../images/longhorn.jpg';
 
 function Silence() {
   return (
@@ -17,7 +17,7 @@ function Silence() {
 function Affirmations() {
   const text = (
     <ul>
-      <li>I commit to improving my sleep.</li>
+      <li>I commit to 5/3/1.</li>
       <li>I commit to one date each week.</li>
       <li>I commit to house hacking.</li>
     </ul>
@@ -32,7 +32,7 @@ function Visualization() {
   return (
     <Saver
       title="Visualization"
-      text="I visualize renting Unit A."
+      text="I visualize house hacking with Unit A."
     >
       <CardMedia image={visualization} component="img" />
     </Saver>
