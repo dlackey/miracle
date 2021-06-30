@@ -20,7 +20,6 @@ function Affirmations() {
       <li>I commit to improving my sleep.</li>
       <li>I commit to one date each week.</li>
       <li>I commit to house hacking.</li>
-      <li>I commit to this quarter's Rocks.</li>
     </ul>
   );
 
@@ -33,7 +32,7 @@ function Visualization() {
   return (
     <Saver
       title="Visualization"
-      text="I visualize Falconhead getting leased."
+      text="I visualize renting Unit A."
     >
       <CardMedia image={visualization} component="img" />
     </Saver>
