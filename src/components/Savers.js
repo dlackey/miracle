@@ -3,6 +3,11 @@ import { CardMedia } from '@material-ui/core';
 import { Saver, SaverAction } from './Saver';
 import visualization from '../images/longhorn.jpg';
 
+const AFFIRMATIONS = ['5/3/1', 'one date each week', 'house hacking'];
+const VISUALIZATION = 'I visualize house hacking with Unit A.';
+const READING_PAGES = 7;
+const READING_TITLE = 'Profit First';
+
 function Silence() {
   return (
     <Saver
@@ -17,9 +22,7 @@ function Silence() {
 function Affirmations() {
   const text = (
     <ul>
-      <li>I commit to 5/3/1.</li>
-      <li>I commit to one date each week.</li>
-      <li>I commit to house hacking.</li>
+      {AFFIRMATIONS.map(x => <li>I commit to {x}.</li>)}
     </ul>
   );
 
@@ -32,7 +35,7 @@ function Visualization() {
   return (
     <Saver
       title="Visualization"
-      text="I visualize house hacking with Unit A."
+      text={VISUALIZATION}
     >
       <CardMedia image={visualization} component="img" />
     </Saver>
@@ -49,9 +52,10 @@ function Exercise() {
 }
 
 function Reading() {
+  const page = READING_PAGES * (new Date()).getDate();
   const text = (
     <React.Fragment>
-      I read 7 pages of <i>Profit First</i>.
+      I read to page {page} of <i>{READING_TITLE}</i>.
     </React.Fragment>
   );
 
@@ -66,7 +70,7 @@ function Chinese() {
   return (
     <Saver
       title="Chinese"
-      text="I do a Duolingo Chinese lesson."
+      text="I earn 50 XP in Duolingo."
     >
       <SaverAction text="Open Duolingo" href="https://www.duolingo.com/" />
     </Saver>
