@@ -52,7 +52,7 @@ function Exercise() {
 }
 
 function Reading() {
-  const page = READING_PAGES * (new Date()).getDate();
+  const page = READING_PAGES * (new Date()).getDate() + 1;
   const text = (
     <React.Fragment>
       I read to page {page} of <i>{READING_TITLE}</i>.
