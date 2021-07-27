@@ -5,8 +5,8 @@ import visualization from '../images/longhorn.jpg';
 
 const AFFIRMATIONS = ['5/3/1', 'one date each week', 'house hacking'];
 const VISUALIZATION = 'I visualize house hacking with Unit A.';
-const READING_PAGES = 7;
-const READING_TITLE = 'Profit First';
+const READING_PAGES = 10;
+const READING_TITLE = 'Cashflow Quadrant';
 
 function Silence() {
   return (
