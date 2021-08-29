@@ -46,8 +46,16 @@ function Exercise() {
   return (
     <Saver
       title="Exercise"
-      text="I do jumping jacks for 60 seconds."
-    />
+      text="I strengthen my wrists."
+    >
+      <CardMedia
+        component="iframe"
+        width="100%"
+        height="223"
+        frameborder="0"
+        src="https://www.youtube.com/embed/M7hga65KtDA"
+      />
+    </Saver>
   );
 }
 
