@@ -54,7 +54,7 @@ function Exercise() {
         height="223"
         frameborder="0"
         allowFullScreen
-        src="https://www.youtube.com/embed/M7hga65KtDA"
+        src="https://www.youtube.com/embed/rY1-NA9V6ko"
       />
     </Saver>
   );
