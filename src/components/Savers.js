@@ -53,6 +53,7 @@ function Exercise() {
         width="100%"
         height="223"
         frameborder="0"
+        allowFullScreen
         src="https://www.youtube.com/embed/M7hga65KtDA"
       />
     </Saver>
