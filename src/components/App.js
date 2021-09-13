@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function isSunday() {
-  return (new Date()).getDay() === 1;
+  return (new Date()).getDay() === 0;
 }
 
 function Sunday() {
