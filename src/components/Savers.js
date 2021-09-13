@@ -5,8 +5,8 @@ import visualization from '../images/longhorn.jpg';
 
 const AFFIRMATIONS = ['5/3/1', 'one date each week', 'house hacking'];
 const VISUALIZATION = 'I visualize house hacking with Unit A.';
-const READING_PAGES = 10;
-const READING_TITLE = 'Cashflow Quadrant';
+const READING_PAGES = 13;
+const READING_TITLE = 'Think and Grow Rich';
 
 function Silence() {
   return (
@@ -46,8 +46,17 @@ function Exercise() {
   return (
     <Saver
       title="Exercise"
-      text="I do jumping jacks for 60 seconds."
-    />
+      text="I strengthen my wrists."
+    >
+      <CardMedia
+        component="iframe"
+        width="100%"
+        height="223"
+        frameborder="0"
+        allowFullScreen
+        src="https://www.youtube.com/embed/rY1-NA9V6ko"
+      />
+    </Saver>
   );
 }
 

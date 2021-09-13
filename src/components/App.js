@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import logo from './images/miracle.png';
-import { Silence, Affirmations, Visualization, Exercise, Reading, Chinese, Scribing } from './components/Savers';
-import Timer from './components/Timer';
+import logo from '../images/miracle.png';
+import { Silence, Affirmations, Visualization, Exercise, Reading, Chinese, Scribing } from './Savers';
+import Timer from './Timer';
 
 const useStyles = makeStyles(theme => ({
   container: {
