@@ -2,10 +2,11 @@ import React from 'react';
 import { CardMedia } from '@material-ui/core';
 import { Saver, SaverAction } from './Saver';
 import visualization from '../images/longhorn.jpg';
+import { calculatePage } from './helpers';
 
 const AFFIRMATIONS = ['5/3/1', 'one date each week', 'house hacking'];
 const VISUALIZATION = 'I visualize house hacking with Unit A.';
-const READING_PAGES = 13;
+const READING_PAGES = 384;
 const READING_TITLE = 'Think and Grow Rich';
 
 function Silence() {
@@ -22,7 +23,7 @@ function Silence() {
 function Affirmations() {
   const text = (
     <ul>
-      {AFFIRMATIONS.map(x => <li>I commit to {x}.</li>)}
+      {AFFIRMATIONS.map((x, i) => <li key={i}>I commit to {x}.</li>)}
     </ul>
   );
 
@@ -52,7 +53,7 @@ function Exercise() {
         component="iframe"
         width="100%"
         height="223"
-        frameborder="0"
+        frameBorder="0"
         allowFullScreen
         src="https://www.youtube.com/embed/rY1-NA9V6ko"
       />
@@ -61,7 +62,7 @@ function Exercise() {
 }
 
 function Reading() {
-  const page = READING_PAGES * (new Date()).getDate() + 1;
+  const page = calculatePage(READING_PAGES);
   const text = (
     <React.Fragment>
       I read to page {page} of <i>{READING_TITLE}</i>.

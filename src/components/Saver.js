@@ -16,7 +16,7 @@ function Saver({ title, text, children }) {
         <Typography variant="h6">
           {title}
         </Typography>
-        <Typography color="textSecondary" variant="body1">
+        <Typography color="textSecondary" variant="body1" component="div">
           {text}
         </Typography>
       </CardContent>
