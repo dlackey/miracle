@@ -66,12 +66,9 @@ function Reading() {
   );
 }
 
-function Chinese() {
+function Chinese({ text }) {
   return (
-    <Saver
-      title="Chinese"
-      text="I earn 50 XP in Duolingo."
-    >
+    <Saver title="Chinese" text={text}>
       <SaverAction text="Open Duolingo" href="https://www.duolingo.com/" />
     </Saver>
   );

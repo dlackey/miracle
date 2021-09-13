@@ -15,6 +15,33 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+function isSunday() {
+  return (new Date()).getDay() === 1;
+}
+
+function Sunday() {
+  return (
+    <React.Fragment>
+      <Scribing />
+      <Chinese text="I complete a lesson in Duolingo." />
+    </React.Fragment>
+  );
+}
+
+function Daily() {
+  return (
+    <React.Fragment>
+      <Silence />
+      <Affirmations />
+      <Visualization />
+      <Scribing />
+      <Chinese text="I earn 50 XP in Duolingo." />
+      <Reading />
+      <Exercise />
+    </React.Fragment>
+  );
+}
+
 function App() {
   const classes = useStyles();
 
@@ -23,13 +50,7 @@ function App() {
       <Timer />
       <Container maxWidth="xs" className={classes.container}>
         <img src={logo} className={classes.logo} alt="Logo" />
-        <Silence />
-        <Affirmations />
-        <Visualization />
-        <Scribing />
-        <Chinese />
-        <Reading />
-        <Exercise />
+        {isSunday() ? <Sunday /> : <Daily />}
       </Container>
     </React.Fragment>
   );
