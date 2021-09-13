@@ -9,16 +9,18 @@ function countDays() {
 }
 
 function countSundays(day) {
-  let before = day || countDays();
-  let date = new Date();
+  const lastDay = day || countDays();
   let sundays = 0;
+  let date = new Date();
   
-  for (let i = 1; i < before; i++) {
+  // Count sundays
+  for (let i = 1; i <= lastDay; i++) {
     date.setDate(i)
     if (date.getDay() === 0)
       ++sundays;
   }
 
+  // Return count
   return sundays;
 }
 
@@ -28,7 +30,7 @@ function getDate() {
 
 function calculatePage(pages) {
   const days = countDays() - countSundays();
-  const day = getDate() - countSundays(getDate() + 1);
+  const day = getDate() - countSundays(getDate());
   return Math.floor(pages * day / days) + 1;
 }
 

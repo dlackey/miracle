@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Beep from 'browser-beep';
-import { Fab, Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { Fab, Typography, makeStyles } from '@material-ui/core';
 import Icon from '@material-ui/icons/Timer';
 
 const INTERVAL = 60000;
@@ -33,13 +32,18 @@ function Timer() {
   }
 
   const classes = useStyles();
-  const content = (time <= 0) ? <Icon /> : <Typography>{time}</Typography>;
 
   return (
     <Fab color="primary" className={classes.fab} onClick={handleClick}>
-      {content}
+      <TimerContent time={time} />
     </Fab>
   );
+}
+
+function TimerContent({ time }) {
+  if (time <= 0)
+    return <Icon />;
+  return <Typography>{time}</Typography>;
 }
 
 export default Timer;

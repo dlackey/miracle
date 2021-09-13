@@ -1,6 +1,5 @@
 import React from 'react';
-import { CardMedia } from '@material-ui/core';
-import { Saver, SaverAction } from './Saver';
+import { Saver, SaverAction, SaverImage, SaverVideo } from './Saver';
 import visualization from '../images/longhorn.jpg';
 import { calculatePage } from './helpers';
 
@@ -23,7 +22,9 @@ function Silence() {
 function Affirmations() {
   const text = (
     <ul>
-      {AFFIRMATIONS.map((x, i) => <li key={i}>I commit to {x}.</li>)}
+      {AFFIRMATIONS.map((x, i) => (
+        <li key={i}>I commit to {x}.</li>
+      ))}
     </ul>
   );
 
@@ -38,7 +39,7 @@ function Visualization() {
       title="Visualization"
       text={VISUALIZATION}
     >
-      <CardMedia image={visualization} component="img" />
+      <SaverImage image={visualization} />
     </Saver>
   );
 }
@@ -49,14 +50,7 @@ function Exercise() {
       title="Exercise"
       text="I strengthen my wrists."
     >
-      <CardMedia
-        component="iframe"
-        width="100%"
-        height="223"
-        frameBorder="0"
-        allowFullScreen
-        src="https://www.youtube.com/embed/rY1-NA9V6ko"
-      />
+      <SaverVideo src="https://www.youtube.com/embed/rY1-NA9V6ko" />
     </Saver>
   );
 }

@@ -1,4 +1,4 @@
-import { Button, Card, CardActions, CardContent, Typography } from '@material-ui/core';
+import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
@@ -33,4 +33,19 @@ function SaverAction({ text, href }) {
   );
 }
 
-export { Saver, SaverAction };
+function SaverImage({ image }) {
+  return <CardMedia image={image} component="img" />;
+}
+
+function SaverVideo({ src }) {
+  return <CardMedia
+    component="iframe"
+    width="100%"
+    height="223"
+    frameBorder="0"
+    allowFullScreen
+    src={src}
+  />;
+}
+
+export { Saver, SaverAction, SaverImage, SaverVideo };
