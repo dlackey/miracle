@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/miracle/static/js/main.a36e5164.chunk.js",
-    "main.js.map": "/miracle/static/js/main.a36e5164.chunk.js.map",
+    "main.js": "/miracle/static/js/main.b662af4d.chunk.js",
+    "main.js.map": "/miracle/static/js/main.b662af4d.chunk.js.map",
     "runtime-main.js": "/miracle/static/js/runtime-main.8926bc0a.js",
     "runtime-main.js.map": "/miracle/static/js/runtime-main.8926bc0a.js.map",
     "static/css/2.62902458.chunk.css": "/miracle/static/css/2.62902458.chunk.css",
-    "static/js/2.45d331e8.chunk.js": "/miracle/static/js/2.45d331e8.chunk.js",
-    "static/js/2.45d331e8.chunk.js.map": "/miracle/static/js/2.45d331e8.chunk.js.map",
+    "static/js/2.a5b9be87.chunk.js": "/miracle/static/js/2.a5b9be87.chunk.js",
+    "static/js/2.a5b9be87.chunk.js.map": "/miracle/static/js/2.a5b9be87.chunk.js.map",
     "index.html": "/miracle/index.html",
     "static/css/2.62902458.chunk.css.map": "/miracle/static/css/2.62902458.chunk.css.map",
-    "static/js/2.45d331e8.chunk.js.LICENSE.txt": "/miracle/static/js/2.45d331e8.chunk.js.LICENSE.txt",
+    "static/js/2.a5b9be87.chunk.js.LICENSE.txt": "/miracle/static/js/2.a5b9be87.chunk.js.LICENSE.txt",
     "static/media/longhorn.fba94d10.jpg": "/miracle/static/media/longhorn.fba94d10.jpg",
     "static/media/miracle.68a21630.png": "/miracle/static/media/miracle.68a21630.png",
     "static/media/index.css": "/miracle/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.8926bc0a.js",
     "static/css/2.62902458.chunk.css",
-    "static/js/2.45d331e8.chunk.js",
-    "static/js/main.a36e5164.chunk.js"
+    "static/js/2.a5b9be87.chunk.js",
+    "static/js/main.b662af4d.chunk.js"
   ]
 }
