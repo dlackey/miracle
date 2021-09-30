@@ -5,8 +5,8 @@ import { calculatePage } from './helpers';
 
 const AFFIRMATIONS = ['5/3/1', 'one date each week', 'house hacking'];
 const VISUALIZATION = 'I visualize house hacking with Unit A.';
-const READING_PAGES = 384;
-const READING_TITLE = 'Think and Grow Rich';
+const READING_PAGES = 193;
+const READING_TITLE = 'Who Not How';
 
 function Silence() {
   return (
