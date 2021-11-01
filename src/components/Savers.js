@@ -4,9 +4,9 @@ import visualization from '../images/longhorn.jpg';
 import { calculatePage } from './helpers';
 
 const AFFIRMATIONS = ['5/3/1', 'one date each week', 'house hacking'];
-const VISUALIZATION = 'I visualize house hacking with Unit A.';
-const READING_PAGES = 193;
-const READING_TITLE = 'Who Not How';
+const VISUALIZATION = 'I visualize reaching Superhost status.';
+const READING_PAGES = 198;
+const READING_TITLE = 'Short-Term Rental, Long-Term Wealth';
 
 function Silence() {
   return (
