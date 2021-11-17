@@ -3,7 +3,7 @@ import Beep from 'browser-beep';
 import { Fab, Typography, makeStyles } from '@material-ui/core';
 import Icon from '@material-ui/icons/Timer';
 
-const INTERVAL = 60000;
+const INTERVAL = 120000;
 
 const beep = Beep({ frequency: 830, interval: INTERVAL });
 
