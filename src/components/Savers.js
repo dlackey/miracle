@@ -3,10 +3,10 @@ import { Saver, SaverAction, SaverImage, SaverVideo } from './Saver';
 import visualization from '../images/longhorn.jpg';
 import { calculatePage } from './helpers';
 
-const AFFIRMATIONS = ['5/3/1', 'one date each week', 'house hacking'];
+const AFFIRMATIONS = ['5/3/1', 'one date each week', 'reaching Superhost status'];
 const VISUALIZATION = 'I visualize reaching Superhost status.';
-const READING_PAGES = 198;
-const READING_TITLE = 'Short-Term Rental, Long-Term Wealth';
+const READING_PAGES = 643;
+const READING_TITLE = 'Tools of Titans';
 
 function Silence() {
   return (
