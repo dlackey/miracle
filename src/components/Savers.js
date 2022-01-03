@@ -3,10 +3,10 @@ import { Saver, SaverAction, SaverImage, SaverVideo } from './Saver';
 import visualization from '../images/longhorn.jpg';
 import { calculatePage } from './helpers';
 
-const AFFIRMATIONS = ['5/3/1', 'one date each week', 'reaching Superhost status'];
-const VISUALIZATION = 'I visualize reaching Superhost status.';
-const READING_PAGES = 643;
-const READING_TITLE = 'Tools of Titans';
+const AFFIRMATIONS = ['5/3/1', 'one date each week', 'becoming a Superhost'];
+const VISUALIZATION = 'I visualize becoming a Superhost.';
+const READING_PAGES = 307;
+const READING_TITLE = 'Atomic Habits';
 
 function Silence() {
   return (
@@ -50,7 +50,7 @@ function Exercise() {
       title="Exercise"
       text="I strengthen my wrists."
     >
-      <SaverVideo src="https://www.youtube.com/embed/rY1-NA9V6ko" />
+      <SaverAction text="Open YouTube" href="https://www.youtube.com/embed/rY1-NA9V6ko" />
     </Saver>
   );
 }
@@ -64,9 +64,7 @@ function Reading() {
   );
 
   return (
-    <Saver title="Reading" text={text}>
-      <SaverAction text="Open Book" href="https://apps.apple.com/us/app/id302584613" />
-    </Saver>
+    <Saver title="Reading" text={text} />
   );
 }
 
