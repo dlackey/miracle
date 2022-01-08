@@ -29,7 +29,7 @@ function Everyday() {
       <Affirmations />
       <Visualization />
       <Scribing />
-      <Chinese text="I earn 50 XP in Duolingo." />
+      <Chinese text="I earn a crown in Duolingo." />
       <Reading />
       <Exercise />
     </React.Fragment>
