@@ -1,10 +1,10 @@
 import React from 'react';
-import { Saver, SaverAction, SaverImage, SaverVideo } from './Saver';
-import visualization from '../images/longhorn.jpg';
+import { Saver, SaverAction, SaverImage } from './Saver';
+import visualization from '../images/friends.webp';
 import { calculatePage } from './helpers';
 
-const AFFIRMATIONS = ['5/3/1', 'one date each week', 'becoming a Superhost'];
-const VISUALIZATION = 'I visualize becoming a Superhost.';
+const AFFIRMATIONS = ['5/3/1', 'making friends', 'one date each week'];
+const VISUALIZATION = 'I visualize making friends.';
 const READING_PAGES = 307;
 const READING_TITLE = 'Atomic Habits';
 
