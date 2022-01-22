@@ -1,5 +1,5 @@
 import React from 'react';
-import { Saver, SaverAction, SaverImage } from './Saver';
+import { Saver, SaverAction, SaverImage, SaverVideo } from './Saver';
 import visualization from '../images/friends.webp';
 import { calculatePage } from './helpers';
 
@@ -13,9 +13,7 @@ function Silence() {
     <Saver
       title="Silence"
       text="As I sit in silence, I'm present in the moment. I calm my mind, relax my body, and allow all of my stress to melt away."
-    >
-      <SaverAction text="Open Calm" href="https://calmcom.app.link/" />
-    </Saver>
+    />
   );
 }
 
@@ -50,7 +48,7 @@ function Exercise() {
       title="Exercise"
       text="I strengthen my wrists."
     >
-      <SaverAction text="Open YouTube" href="https://www.youtube.com/embed/rY1-NA9V6ko" />
+      <SaverVideo src="https://www.youtube.com/embed/rY1-NA9V6ko" />
     </Saver>
   );
 }
