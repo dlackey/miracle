@@ -5,8 +5,8 @@ import { calculatePage } from './helpers';
 
 const AFFIRMATIONS = ['5/3/1', 'making friends', 'one date each week'];
 const VISUALIZATION = 'I visualize making friends.';
-const READING_PAGES = 307;
-const READING_TITLE = 'Atomic Habits';
+const READING_PAGES = 300;
+const READING_TITLE = 'Good to Great';
 
 function Silence() {
   return (
