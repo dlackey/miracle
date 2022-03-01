@@ -1,12 +1,12 @@
 import React from 'react';
 import { Saver, SaverAction, SaverImage, SaverVideo } from './Saver';
-import visualization from '../images/friends.webp';
+import visualization from '../images/iron-man.webp';
 import { calculatePage } from './helpers';
 
-const AFFIRMATIONS = ['5/3/1', 'making friends', 'one date each week'];
-const VISUALIZATION = 'I visualize making friends.';
-const READING_PAGES = 300;
-const READING_TITLE = 'Good to Great';
+const AFFIRMATIONS = ['5/3/1', 'one date each week', 'building Edith'];
+const VISUALIZATION = 'I visualize building Edith.';
+const READING_PAGES = 160;
+const READING_TITLE = 'Design is Storytelling';
 
 function Silence() {
   return (
