@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/miracle/static/js/main.b9189f34.chunk.js",
-    "main.js.map": "/miracle/static/js/main.b9189f34.chunk.js.map",
+    "main.js": "/miracle/static/js/main.4bff26ad.chunk.js",
+    "main.js.map": "/miracle/static/js/main.4bff26ad.chunk.js.map",
     "runtime-main.js": "/miracle/static/js/runtime-main.8926bc0a.js",
     "runtime-main.js.map": "/miracle/static/js/runtime-main.8926bc0a.js.map",
     "static/css/2.62902458.chunk.css": "/miracle/static/css/2.62902458.chunk.css",
@@ -10,7 +10,7 @@
     "index.html": "/miracle/index.html",
     "static/css/2.62902458.chunk.css.map": "/miracle/static/css/2.62902458.chunk.css.map",
     "static/js/2.311bdcf8.chunk.js.LICENSE.txt": "/miracle/static/js/2.311bdcf8.chunk.js.LICENSE.txt",
-    "static/media/iron-man.15ff0223.webp": "/miracle/static/media/iron-man.15ff0223.webp",
+    "static/media/iron-man.eb61e4b2.jpg": "/miracle/static/media/iron-man.eb61e4b2.jpg",
     "static/media/miracle.68a21630.png": "/miracle/static/media/miracle.68a21630.png",
     "static/media/index.css": "/miracle/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
@@ -18,6 +18,6 @@
     "static/js/runtime-main.8926bc0a.js",
     "static/css/2.62902458.chunk.css",
     "static/js/2.311bdcf8.chunk.js",
-    "static/js/main.b9189f34.chunk.js"
+    "static/js/main.4bff26ad.chunk.js"
   ]
 }
