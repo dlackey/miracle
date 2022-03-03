@@ -1,6 +1,6 @@
 import React from 'react';
 import { Saver, SaverAction, SaverImage, SaverVideo } from './Saver';
-import visualization from '../images/iron-man.webp';
+import visualization from '../images/iron-man.jpg';
 import { calculatePage } from './helpers';
 
 const AFFIRMATIONS = ['5/3/1', 'one date each week', 'building Edith'];
