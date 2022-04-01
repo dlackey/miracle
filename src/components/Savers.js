@@ -5,8 +5,8 @@ import { calculatePage } from './helpers';
 
 const AFFIRMATIONS = ['5/3/1', 'one date each week', 'building Edith'];
 const VISUALIZATION = 'I visualize building Edith.';
-const READING_PAGES = 160;
-const READING_TITLE = 'Design is Storytelling';
+const READING_PAGES = 520;
+const READING_TITLE = 'Awaken The Giant Within';
 
 function Silence() {
   return (
@@ -78,7 +78,7 @@ function Scribing() {
   return (
     <Saver
       title="Scribing"
-      text="What’s the ONE Thing I can do today such that by doing it everything else will be easier or unnecessary?"
+      text="What's the ONE Thing I can do today such that by doing it everything else will be easier or unnecessary?"
     >
       <SaverAction text="Open Journal" href="https://forms.gle/MSg1Jvvq4PdkbkXM9" />
     </Saver>
