@@ -1,26 +1,31 @@
 function countDays() {
   // Set date
   const date = new Date();
-  date.setMonth(date.getMonth() + 1);
   date.setDate(0);
   
   // Return days
   return date.getDate();
 }
 
+function isSunday(day) {
+  // Set date
+  const date = new Date();
+  date.setDate(day);
+
+  // Check day
+  return date.getDay() === 0;
+}
+
 function countSundays(day) {
   const lastDay = day || countDays();
   let sundays = 0;
-  let date = new Date();
   
   // Count sundays
   for (let i = 1; i <= lastDay; i++) {
-    date.setDate(i)
-    if (date.getDay() === 0)
+    if (isSunday(i))
       ++sundays;
   }
 
-  // Return count
   return sundays;
 }
 
