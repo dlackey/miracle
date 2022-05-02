@@ -3,10 +3,10 @@ import { Saver, SaverAction, SaverImage, SaverVideo } from './Saver';
 import visualization from '../images/iron-man.jpg';
 import { calculatePage } from './utility';
 
-const AFFIRMATIONS = ['5/3/1', 'not criticizing Alison', 'building Edith'];
+const AFFIRMATIONS = ['intermittent fasting', 'not criticizing Alison', 'building Edith'];
 const VISUALIZATION = 'I visualize building Edith.';
 const READING_PAGES = 260;
-const READING_PAGES_OFFSET = 0;
+const READING_PAGES_OFFSET = 260;
 const READING_TITLE = 'Awaken The Giant Within';
 
 function Silence() {
