@@ -1,12 +1,12 @@
 import React from 'react';
 import { Saver, SaverAction, SaverImage, SaverVideo } from './Saver';
-import visualization from '../images/iron-man.jpg';
+import visualization from '../images/longhorn.jpg';
 import { calculatePage } from './utility';
 
-const AFFIRMATIONS = ['5/3/1', 'intermittent fasting', 'not criticizing Alison', 'building Edith'];
-const VISUALIZATION = 'I visualize building Edith.';
-const READING_PAGES = 50;
-const READING_PAGES_OFFSET = 0;
+const AFFIRMATIONS = ['5/3/1', 'not criticizing Alison', 'house hacking'];
+const VISUALIZATION = 'I visualize house hacking.';
+const READING_PAGES = 100;
+const READING_PAGES_OFFSET = 50;
 const READING_TITLE = 'The Multifamily Millionaire and Genghis Khan';
 
 function Silence() {
