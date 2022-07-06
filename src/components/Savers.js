@@ -5,8 +5,8 @@ import { calculatePage } from './utility';
 
 const AFFIRMATIONS = ['5/3/1', 'not criticizing Alison', 'house hacking'];
 const VISUALIZATION = 'I visualize house hacking.';
-const READING_PAGES = 100;
-const READING_PAGES_OFFSET = 50;
+const READING_TO_PAGE = 100;
+const READING_FROM_PAGE = 50;
 const READING_TITLE = 'The Multifamily Millionaire and Genghis Khan';
 
 function Silence() {
@@ -55,7 +55,7 @@ function Exercise() {
 }
 
 function Reading() {
-  const page = calculatePage(READING_PAGES) + READING_PAGES_OFFSET;
+  const page = calculatePage(READING_TO_PAGE, READING_FROM_PAGE);
   const text = (
     <React.Fragment>
       I read to {page}% of <i>{READING_TITLE}</i>.

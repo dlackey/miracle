@@ -33,10 +33,16 @@ function getDate() {
   return (new Date()).getDate();
 }
 
-function calculatePage(pages) {
+function calculatePage(to, from) {
+  // Calculate pages
+  const pages = to - from;
+
+  // Calculate days
   const days = countDays() - countSundays();
   const day = getDate() - countSundays(getDate());
-  return Math.floor(pages * day / days) + 1;
+
+  // Calculate page
+  return Math.floor(pages * day / days) + from + 1;
 }
 
 export { calculatePage };
