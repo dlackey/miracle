@@ -1,13 +1,13 @@
 import React from 'react';
 import { Saver, SaverAction, SaverImage, SaverVideo } from './Saver';
-import visualization from '../images/longhorn.jpg';
+import visualization from '../images/pool.jpg';
 import { calculatePage } from './utility';
 
-const AFFIRMATIONS = ['5/3/1', 'not criticizing Alison', 'house hacking'];
+const AFFIRMATIONS = ['recomposition', 'one date each week', 'house hacking'];
 const VISUALIZATION = 'I visualize house hacking.';
-const READING_TO_PAGE = 100;
-const READING_FROM_PAGE = 50;
-const READING_TITLE = 'The Multifamily Millionaire and Genghis Khan';
+const READING_TO_PAGE = 370;
+const READING_FROM_PAGE = 0;
+const READING_TITLE = '12 Rules for Life';
 
 function Silence() {
   return (
@@ -58,7 +58,7 @@ function Reading() {
   const page = calculatePage(READING_TO_PAGE, READING_FROM_PAGE);
   const text = (
     <React.Fragment>
-      I read to {page}% of <i>{READING_TITLE}</i>.
+      I read to page {page} of <i>{READING_TITLE}</i>.
     </React.Fragment>
   );
 
