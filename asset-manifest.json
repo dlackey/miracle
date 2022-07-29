@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/miracle/static/js/main.2a9ec6a2.chunk.js",
-    "main.js.map": "/miracle/static/js/main.2a9ec6a2.chunk.js.map",
+    "main.js": "/miracle/static/js/main.566f8775.chunk.js",
+    "main.js.map": "/miracle/static/js/main.566f8775.chunk.js.map",
     "runtime-main.js": "/miracle/static/js/runtime-main.8926bc0a.js",
     "runtime-main.js.map": "/miracle/static/js/runtime-main.8926bc0a.js.map",
     "static/css/2.62902458.chunk.css": "/miracle/static/css/2.62902458.chunk.css",
@@ -10,14 +10,14 @@
     "index.html": "/miracle/index.html",
     "static/css/2.62902458.chunk.css.map": "/miracle/static/css/2.62902458.chunk.css.map",
     "static/js/2.ef0ee4bb.chunk.js.LICENSE.txt": "/miracle/static/js/2.ef0ee4bb.chunk.js.LICENSE.txt",
-    "static/media/longhorn.fba94d10.jpg": "/miracle/static/media/longhorn.fba94d10.jpg",
     "static/media/miracle.68a21630.png": "/miracle/static/media/miracle.68a21630.png",
+    "static/media/pool.ecea2cc9.jpg": "/miracle/static/media/pool.ecea2cc9.jpg",
     "static/media/index.css": "/miracle/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.8926bc0a.js",
     "static/css/2.62902458.chunk.css",
     "static/js/2.ef0ee4bb.chunk.js",
-    "static/js/main.2a9ec6a2.chunk.js"
+    "static/js/main.566f8775.chunk.js"
   ]
 }
