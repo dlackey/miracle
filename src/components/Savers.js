@@ -1,5 +1,6 @@
 import React from 'react';
-import { Saver, SaverAction, SaverImage, SaverVideo } from './Saver';
+import { Link } from '@material-ui/core';
+import { Saver, SaverAction, SaverImage } from './Saver';
 import visualization from '../images/pool.jpg';
 import { calculatePage } from './utility';
 
@@ -8,6 +9,17 @@ const VISUALIZATION = 'I visualize house hacking.';
 const READING_TO_PAGE = 370;
 const READING_FROM_PAGE = 0;
 const READING_TITLE = '12 Rules for Life';
+
+const EXERCISE_VIDEOS = [
+  ['https://youtu.be/bEv6CCg2BC8?t=147', 'Back Squat'],
+  ['https://youtu.be/vcBig73ojpE?t=134', 'Barbell Bench Press'],
+  ['https://youtu.be/_RlRDWO2jfg?t=121', 'Barbell Overhead Press'],
+  ['https://youtu.be/VL5Ab0T07e4?t=175', 'Conventional Deadlift'],
+  ['https://youtu.be/yN6Q1UI_xkE?t=75', 'Dip'],
+  ['https://youtu.be/Hdc7Mw6BIEE?t=155', 'Pull-Up'],
+  ['https://youtu.be/-MRNjTr6xrE?t=715', 'Push-Up'],
+  ['https://youtu.be/2RrGnjxSsiA?t=124', 'Weighted Crunch'],
+];
 
 function Silence() {
   return (
@@ -44,14 +56,17 @@ function Visualization() {
 }
 
 function Exercise() {
-  return (
-    <Saver
-      title="Exercise"
-      text="I strengthen my wrists."
-    >
-      <SaverVideo src="https://www.youtube.com/embed/rY1-NA9V6ko" />
-    </Saver>
+  const text = (
+    <ul>
+      {EXERCISE_VIDEOS.map(video => (
+        <li>
+          <Link href={video[0]} target="_blank">{video[1]}</Link>
+        </li>
+      ))}
+    </ul>
   );
+
+  return <Saver title="Exercise" text={text} />;
 }
 
 function Reading() {
