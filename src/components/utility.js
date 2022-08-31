@@ -42,7 +42,7 @@ function calculatePage(to, from) {
   const day = getDate() - countSundays(getDate());
 
   // Calculate page
-  return Math.floor(pages * day / days) + from + 1;
+  return Math.min(Math.floor(pages * day / days) + from + 1, to);
 }
 
 export { calculatePage };
