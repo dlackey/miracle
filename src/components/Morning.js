@@ -16,7 +16,6 @@ function isSunday() {
 function Sunday() {
   return (
     <React.Fragment>
-      <Scribing />
       <Chinese text="I complete a lesson in Duolingo." />
     </React.Fragment>
   );
@@ -29,7 +28,7 @@ function Everyday() {
       <Affirmations />
       <Visualization />
       <Scribing />
-      <Chinese text="I earn a crown in Duolingo." />
+      <Chinese text="I complete a quest in Duolingo." />
       <Reading />
       <Exercise />
     </React.Fragment>
