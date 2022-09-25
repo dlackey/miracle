@@ -17,6 +17,7 @@ function Sunday() {
   return (
     <React.Fragment>
       <Chinese text="I complete a lesson in Duolingo." />
+      <Exercise />
     </React.Fragment>
   );
 }
