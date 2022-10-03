@@ -6,9 +6,9 @@ import { calculatePage } from './utility';
 
 const AFFIRMATIONS = ['recomposition', 'one date each week', 'house hacking'];
 const VISUALIZATION = 'I visualize house hacking.';
-const READING_TO_PAGE = 289;
+const READING_TO_PAGE = 274;
 const READING_FROM_PAGE = 0;
-const READING_TITLE = 'The Ruthless Elimination of Hurry';
+const READING_TITLE = 'Never Split the Difference';
 
 const EXERCISE_VIDEOS = [
   ['https://youtu.be/bEv6CCg2BC8?t=147', 'Back Squat'],
